@@ -59,14 +59,14 @@ const FaqSection = () => {
       <div className="border-t border-border">
         {faqs.map(({ q, a }) => (
           <details key={q} name="faq" className="group border-b border-border">
-            <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-6 [&::-webkit-details-marker]:hidden">
-              <h3 className="font-display text-xl leading-snug text-forest transition-colors group-hover:text-terracotta sm:text-2xl">
+            <summary className="flex cursor-pointer list-none items-start justify-between gap-4 py-3.5 sm:gap-6 sm:py-6 [&::-webkit-details-marker]:hidden">
+              <h3 className="font-display text-[1.05rem] leading-snug text-forest transition-colors group-hover:text-terracotta sm:text-2xl">
                 {q}
               </h3>
-              <Plus className="mt-1 size-5 shrink-0 text-gold group-open:hidden" aria-hidden="true" />
-              <Minus className="mt-1 hidden size-5 shrink-0 text-gold group-open:block" aria-hidden="true" />
+              <Plus className="mt-0.5 size-4 sm:mt-1 sm:size-5 shrink-0 text-gold group-open:hidden" aria-hidden="true" />
+              <Minus className="mt-0.5 hidden size-4 sm:mt-1 sm:size-5 shrink-0 text-gold group-open:block" aria-hidden="true" />
             </summary>
-            <p className="pb-6 pr-10 text-sm leading-relaxed text-muted-foreground sm:text-[15px]">{a}</p>
+            <p className="pb-4 pr-6 text-sm sm:pb-6 sm:pr-10 leading-relaxed text-muted-foreground sm:text-[15px]">{a}</p>
           </details>
         ))}
       </div>

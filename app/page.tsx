@@ -9,6 +9,7 @@ import StatsBand from "@/components/StatsBand";
 import ServicesPreview from "@/components/ServicesPreview";
 import FaqSection from "@/components/FaqSection";
 import WhoIWorkWith from "@/components/WhoIWorkWith";
+import Testimonials from "@/components/Testimonials";
 
 export default function HomePage() {
   return (
@@ -79,6 +80,9 @@ export default function HomePage() {
 
       {/* Who I work with */}
       <WhoIWorkWith />
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* FAQ */}
       <FaqSection />

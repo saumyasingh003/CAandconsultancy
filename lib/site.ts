@@ -80,3 +80,31 @@ export const stats = [
   { value: '1000+', label: 'Returns Filed' },
   { value: '50+', label: 'Businesses Served' },
 ]
+
+// Home-page testimonials.
+// TODO: SAMPLE TEXT ONLY. Replace with real client feedback (with the client's permission)
+// before going live, and check current ICAI guidelines on testimonials for CA websites.
+// Set `showTestimonials` to false to hide the section entirely.
+// Optional `photo`: path to a client photo in /public (e.g. '/clients/name.jpg'); initials are shown otherwise.
+export const showTestimonials = true
+
+export const testimonials: { quote: string; name: string; role: string; photo?: string }[] = [
+  {
+    quote:
+      'Filing my ITR used to be stressful every July. Now everything is done well before the due date, and every question I have gets a clear answer.',
+    name: 'Sample Client',
+    role: 'Salaried professional, Patna',
+  },
+  {
+    quote:
+      'GST registration and monthly returns are handled on time. Having one CA I can call directly makes a real difference for a small business like mine.',
+    name: 'Sample Client',
+    role: 'Retail business owner',
+  },
+  {
+    quote:
+      'From registering our LLP to the yearly compliance, the guidance was practical and easy to follow.',
+    name: 'Sample Client',
+    role: 'Startup co-founder',
+  },
+]

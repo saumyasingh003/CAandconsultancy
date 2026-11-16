@@ -131,8 +131,8 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <div className="mt-4 border-t border-border">
                   {details.faqs.map(({ q, a }) => (
                     <details key={q} name={`faq-${service.slug}`} className="group border-b border-border">
-                      <summary className="flex cursor-pointer list-none items-start justify-between gap-6 py-5 [&::-webkit-details-marker]:hidden">
-                        <span className="font-display text-lg leading-snug text-forest transition-colors group-hover:text-terracotta sm:text-xl">
+                      <summary className="flex cursor-pointer list-none items-start justify-between gap-4 py-3.5 sm:gap-6 sm:py-5 [&::-webkit-details-marker]:hidden">
+                        <span className="font-display text-[1.05rem] leading-snug text-forest transition-colors group-hover:text-terracotta sm:text-xl">
                           {q}
                         </span>
                         <Plus className="mt-1 size-5 shrink-0 text-gold group-open:hidden" aria-hidden="true" />

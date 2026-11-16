@@ -85,7 +85,7 @@ const ServicesPreview = () => {
           >
             <div className="flex flex-col justify-between gap-6 p-6 sm:min-h-56 sm:gap-10 sm:p-7">
               <Icon
-                className="size-12 text-terracotta transition-transform group-hover:-translate-y-1"
+                className="hidden size-12 text-terracotta transition-transform group-hover:-translate-y-1 sm:block"
                 strokeWidth={1.25}
                 aria-hidden="true"
               />
@@ -103,7 +103,7 @@ const ServicesPreview = () => {
               </ul>
               <Link
                 href={`/services/${slug}`}
-                className="mt-auto inline-flex w-fit items-center gap-6 rounded-md bg-forest px-5 py-3 text-sm font-semibold text-ivory transition-colors hover:bg-terracotta"
+                className="mt-auto flex w-full items-center justify-center gap-3 rounded-md bg-forest px-5 py-3 text-sm font-semibold text-ivory transition-colors hover:bg-terracotta"
                 aria-label={`Learn more about ${title}`}
               >
                 Learn More <ArrowRight className="size-4" />
